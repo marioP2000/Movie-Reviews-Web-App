@@ -1,0 +1,97 @@
+//Style and media queries for all review lists
+@mixin reviews-list {
+
+    // Review Container
+    #review {
+        @include flex-column-center;
+        @include default-font;
+        align-self: flex-start;
+        position: relative;
+        margin: 2% 0;
+        padding: 2%;
+        width: 75%;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border: 1px solid $border-color;
+        border-left: none;
+        transition: 0.2s;
+
+        &:hover {
+            border: 1px solid $border-light-color;
+            border-left: none;
+        }
+
+        // Title
+        a {
+            text-decoration: none;
+        }
+
+        #movie-title {
+            font-size: 2rem;
+            color: $primary-font-color;
+            border-bottom: 1px solid transparent;
+            transition: 0.2s;
+
+            &:hover {
+                border-bottom: 1px solid $border-light-color;
+            }
+        }
+
+        // Genre
+        h2 {
+            @include default-font;
+            font-style: italic;
+            color: $secondary-font-color;
+            position: absolute;
+            top: 10%;
+            left: 2%;
+        }
+
+        // Body
+        p {
+            @include default-font;
+            font-size: 1.1rem;
+            color: $secondary-font-color;
+            margin: 5% 0;
+        }
+
+        // Rating
+        h3 {
+            font-style: italic;
+            color: $primary-font-color;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+
+    // Media Queries
+    @media (max-width: 900px) {
+
+        // Review Container
+        #review {
+            width: 100%;
+            border-radius: 0;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+
+            &:hover {
+                border: 1px solid $border-color;
+                border-left: none;
+                border-right: none;
+                border-top: none;
+            }
+
+            #movie-title {
+                align-self: flex-start;
+            }
+
+            // Genre
+            h2 {
+                position: relative;
+                align-self: flex-start;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}

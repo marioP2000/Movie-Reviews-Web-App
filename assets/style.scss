@@ -1,0 +1,38 @@
+// Color Pallet
+$accent-color: #22d3ee;
+
+$border-color: #334155;
+$border-light-color: #94a3b8;
+
+// Font Colors
+$primary-font-color: #f1f5f9;
+$secondary-font-color: #cbd5e1;
+
+// Font Style
+@mixin default-font {
+    font-weight: normal;
+    letter-spacing: 0.25px;
+}
+
+// Flex Layouts
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
