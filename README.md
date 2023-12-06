@@ -13,7 +13,7 @@ This is a simple Web Application for rating movies and writing reviews with a se
 * Node
 * MongoDB connection
 
-## Installation
+## Setup
 1. Install required packages in the root directory
 ```
 npm install
