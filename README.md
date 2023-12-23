@@ -1,7 +1,7 @@
 # Movie-Reviews-Web-App
 This is a simple Web Application for rating movies and writing reviews with a search function, created with Vue.js and Axios in the frontend and Node, Express and Mongoose in the backend with MongoDB serving as a database.
 
-## Technologies used in this project
+## What I used in this project
 * Vue.js
 * Axios
 * Node
